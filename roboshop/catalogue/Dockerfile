@@ -48,6 +48,7 @@
 # # Set the entrypoint
 # CMD ["server.js"]
 # Use the Distroless Node.js base image
+# Use the Distroless Node.js base image
 FROM gcr.io/distroless/nodejs:14
 
 # Create a non-root user with a home directory
@@ -66,4 +67,5 @@ RUN npm install
 COPY server.js /opt/server/
 
 # Set the entrypoint
-CMD ["server.js"]
+ENTRYPOINT ["node", "server.js"]
+
