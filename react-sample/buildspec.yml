@@ -1,0 +1,21 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo "pre build phase started!"
+      #- echo mention docker login command here
+      - echo "pre build phase completed!"
+  build:
+    commands:
+      - echo "build phase started!"
+      #- Que- " Mention command below to give executing permission for the script you have created"
+      #- Que- "Mention command below to run shell script"
+      #- Que- Mention the command to print new version
+      #- Que- "Set name as Vijay instead of hello-react in package.json file using sed command
+      #- Que- "Mention the command to build docker image below"
+      - echo "build phase completed!"
+  post_build:
+    commands:
+      - echo "post build phase started"
+      #- Que- Mention the command to push docker image to repository
+      - echo "post build phase completed"
